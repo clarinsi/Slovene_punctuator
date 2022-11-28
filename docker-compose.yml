@@ -1,0 +1,12 @@
+services:
+  punctuator:
+    restart: unless-stopped
+    image: rsdo/ds2/nemo-pc:latest
+    build: .
+    ports:
+      - 5000:5000
+    volumes:
+      - type: bind
+        source: ./models/v3.6
+        target: /opt/pc/models/v3.6
+        read_only: true

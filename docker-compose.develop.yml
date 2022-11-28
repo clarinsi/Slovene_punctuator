@@ -1,0 +1,6 @@
+services:
+  punctuator:
+    volumes:
+      - type: bind
+        source: .
+        target: /opt/pc/

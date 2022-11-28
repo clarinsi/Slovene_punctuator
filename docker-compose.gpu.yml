@@ -1,0 +1,8 @@
+services:
+  punctuator:
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities:
+              - gpu

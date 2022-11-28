@@ -1,0 +1,9 @@
+.env
+_*/
+venv/
+
+models/
+temp/
+*.log
+
+!*.patch
